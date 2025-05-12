@@ -17,8 +17,19 @@ class MyApp extends StatelessWidget {
         title: 'Namer App',
         theme: ThemeData(
           useMaterial3: true,
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
+          colorScheme: ColorScheme.fromSeed(
+            seedColor: Colors.orange,
+            brightness: Brightness.light,
+          ),
         ),
+        darkTheme: ThemeData(
+          useMaterial3: true,
+          colorScheme: ColorScheme.fromSeed(
+            seedColor: Colors.orange,
+            brightness: Brightness.dark,
+          ),
+        ),
+        themeMode: ThemeMode.system,
         home: MyHomePage(),
       ),
     );
